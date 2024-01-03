@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+#
+#eureka:
+#  server:
+#    enable-self-preservation: false
+
+eureka:
+  client:
+    register-with-eureka: false # Set to false if this server should not register with itself
+    fetch-registry: false # Set to false if this server should not fetch registry information from itself
+
+#    service-url:
+#      default-zone: http://localhost:${server.port}/eureka # URL where other Eureka clients can register and discover services
+
+spring:
+  application:
+    name: service-registry-eureka
